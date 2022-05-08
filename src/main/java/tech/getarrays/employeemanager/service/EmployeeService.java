@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.UUID;
 
 @Service
-public class employeeService {
+public class EmployeeService {
     private final EmployeeRepo employeeRepo; //typ EmployeeRepo, coz je nas interface, ve kterem je knihovna(repository) se vsemi funkcemi pro delani tabulek
 
     @Autowired
-    public employeeService(EmployeeRepo employeeRepo) {
+    public EmployeeService(EmployeeRepo employeeRepo) {
         this.employeeRepo = employeeRepo;
     }
 
