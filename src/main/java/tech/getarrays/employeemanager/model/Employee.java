@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Employee implements Serializable { //Serializable, protoze to budu prevadet na JSON a zase tak atd.
     @Id //urcuji primarni klic
     @GeneratedValue(strategy= GenerationType.IDENTITY) //strategie, jak se bude primarni klic urcovat, v tehle jednoduche appce by to bylo jedno, ktery bychom pouzili
-    @Column(nullable = false,updatable = false)  //nesmi byt nula a jakmile je to prideleno, neda se zmenit
+    @Column(nullable = false,updatable = false)  //nesmi byt nula a jakmile je to prideleno, neda se zmenit, kdyz tam nic nedam tak se to asi vygeneruje samo
     private Long id;
     private String name;
     private String email;
